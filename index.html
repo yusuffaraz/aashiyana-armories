@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Aashiyana Armories</title>
+</head>
+
+<body>
+    <div id="shop" class="container-fluid">
+        <nav>
+            <div class="row pt-2 pb-2" id="navbar">
+                <div class="col-10 fs-3">
+                    <strong><b><span id="username">Hello, <span contenteditable="true">Your Name</span></span></b></strong>
+                </div>
+                <div class="col text-end">
+                    <span id="open" onclick="show_modal()"><i class="fs-1 fa-solid fa-cart-shopping"></i></span>
+                </div>
+            </div>
+        </nav>
+        <div class="container" id="prodcont">
+            <div class="row pb-2" id="prodrow1">
+                <div class="col-12 col-md-4 mt-3 mb-5" id="prodcol1">
+                    <div id="imgdiv_001">
+                        <img src="Images/img_001.jpg" alt="Thompson SMG">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="about">
+                        <div class="name" id="name_001">
+                            M416
+                        </div>
+                        <div class="desc">
+                            A tactical rifle based on the discontinued XM8-project as an improvement of both the
+                            M16/AR-15 and the M4 Carbindde, it integrates the short-stroke gas piston system from the
+                            G36
+                            rifle for less recoil and increased reliability. Adopted by the militaries of several
+                            countries across the world.
+                        </div>
+                    </div>
+                    <div class="prchs mt-2">
+                        <select id="quantity_001" class="d-block">
+                            <option value="choose">
+                                Quantity
+                            </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="price text-danger fs-2">
+                        <sup>&#8377;</sup><span class="fs-1" id="amt_001">25,000</span>
+                        <div id="add_001" class="px-0 py-0 mx-3 purchase btn" onclick="addtocart(this)">
+                            <i class="fa-sharp fa-solid fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="prodrow2">
+                <div class="col-12 mt-3 col-md-4 mt-3 mb-5" id="prodcol2">
+                    <div id="imgdiv_002">
+                        <img src="Images/img_002.jpg" alt="CM901">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="about">
+                        <div class="name" id="name_002">
+                            CM901
+                        </div>
+                        <div class="desc">
+                            The Colt CM901 is a modular selective-fire rifle. Its caliber and barrel length can be
+                            changed without the use of tools. Its semi-automatic variant is the LE901-16S.
+                        </div>
+                    </div>
+                    <div class="prchs mt-2">
+                        <select id="quantity_002" class="d-block">
+                            <option value="choose">
+                                Quantity
+                            </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="price text-danger fs-2">
+                        <sup>&#8377;</sup><span class="fs-1" id="amt_002">22,000</span>
+                        <div id="add_002" class="px-0 py-0 mx-3 purchase btn" onclick="addtocart(this)">
+                            <i class="fa-sharp fa-solid fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="prodrow3">
+                <div class="col-12 mt-3 col-md-4 mt-3 mb-5" id="prodcol3">
+                    <div id="imgdiv_003">
+                        <img src="Images/img_003.jpg" alt="CM901">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="about">
+                        <div class="name" id="name_003">
+                            SCAR-L
+                        </div>
+                        <div class="desc">
+                            The FN SCAR®-L assault rifle is chambered in 5.56×45mm NATO calibre and comes standard
+                            with a choice of barrel lengths (10” or 14.5”) to fit any requirements in terms of user
+                            morphology and mission at hand.
+                        </div>
+                    </div>
+                    <div class="prchs mt-2">
+                        <select name="" id="quantity_003" class="d-block">
+                            <option value="choose">
+                                Quantity
+                            </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="price text-danger fs-2">
+                        <sup>&#8377;</sup><span class="fs-1" id="amt_003">20,000</span>
+                        <div id="add_003" class="px-0 py-0 mx-3 purchase btn" onclick="addtocart(this)">
+                            <i class="fa-sharp fa-solid fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="prodrow4">
+                <div class="col-12 mt-3 col-md-4 mt-3 mb-5" id="prodcol4">
+                    <div id="imgdiv_004">
+                        <img src="Images/img_004.jpg" alt="CM901">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="about">
+                        <div class="name" id="name_004">
+                            Thompson
+                        </div>
+                        <div class="desc">
+                            This is a blowback-operated, air-cooled, magazine-fed selective-fire submachine gun,
+                            invented by United States Army Brigadier general John T. Thompson in 1918.
+                        </div>
+                    </div>
+                    <div class="prchs mt-2">
+                        <select name="" id="quantity_004" class="d-block">
+                            <option value="choose">
+                                Quantity
+                            </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="price text-danger fs-2">
+                        <sup>&#8377;</sup><span class="fs-1" id="amt_004">16,000</span>
+                        <div id="add_004" class="px-0 py-0 mx-3 purchase btn" onclick="addtocart(this)">
+                            <i class="fa-sharp fa-solid fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="prodrow5">
+                <div class="col-12 mt-3 col-md-4 mt-3 mb-5" id="prodcol5">
+                    <div id="imgdiv_005">
+                        <img src="Images/img_005.jpg" alt="CM901">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="about">
+                        <div class="name" id="name_005">
+                            AK-47
+                        </div>
+                        <div class="desc">
+                            AK-47, also called Kalashnikov Model 1947, Soviet assault rifle, possibly the most widely
+                            used shoulder weapon in the world. The initials AK represent Avtomat Kalashnikova, Russian
+                            for “automatic Kalashnikov,” for its designer, Mikhail Timofeyevich Kalashnikov, who
+                            designed the accepted version of the weapon in 1947.
+                        </div>
+                    </div>
+                    <div class="prchs mt-2">
+                        <select name="" id="quantity_005" class="d-block">
+                            <option value="choose">
+                                Quantity
+                            </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="price text-danger fs-2">
+                        <sup>&#8377;</sup><span class="fs-1" id="amt_005">19,000</span>
+                        <div id="add_005" class="px-0 py-0 mx-3 purchase btn" onclick="addtocart(this)">
+                            <i class="fa-sharp fa-solid fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="prodrow6">
+                <div class="col-12 mt-3 col-md-4 mt-3 pt-3" id="prodcol6">
+                    <div id="imgdiv_006">
+                        <img src="Images/img_006.jpg" alt="CM901">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="about">
+                        <div class="name" id="name_006">
+                            Hand Grenade
+                        </div>
+                        <div class="desc">
+                            This consists of an explosive charge ("filler"), a detonator mechanism, an internal striker
+                            to trigger the detonator, and a safety lever secured by a cotter pin.
+                        </div>
+                    </div>
+                    <div class="prchs mt-2">
+                        <select name="" id="quantity_006" class="d-block">
+                            <option value="choose">
+                                Quantity
+                            </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="price text-danger fs-2">
+                        <sup>&#8377;</sup><span class="fs-1" id="amt_006">5,000</span>
+                        <div id="add_006" class="px-0 py-0 mx-3 purchase btn" onclick="addtocart(this)">
+                            <i class="fa-sharp fa-solid fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="prodrow7">
+                <div class="col-12 mt-3 col-md-4 mt-3 pt-3" id="prodcol7">
+                    <div id="imgdiv_007">
+                        <img src="Images/img_007.jpg" alt="CM901">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="about">
+                        <div class="name" id="name_007">
+                            Smoke Grenade
+                        </div>
+                        <div class="desc">
+                            This is a canister-type grenade used as a signaling device, target or landing zone marking
+                            device, or as a screening device for unit movements.
+                        </div>
+                    </div>
+                    <div class="prchs mt-2">
+                        <select name="" id="quantity_007" class="d-block">
+                            <option value="choose">
+                                Quantity
+                            </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="price text-danger fs-2">
+                        <sup>&#8377;</sup><span class="fs-1" id="amt_007">3,000</span>
+                        <div id="add_007" class="px-0 py-0 mx-3 purchase btn" onclick="addtocart(this)">
+                            <i class="fa-sharp fa-solid fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="prodrow8">
+                <div class="col-12 mt-3 col-md-4 mt-3" id="prodcol8">
+                    <div id="imgdiv_008">
+                        <img src="Images/img_008.jpg" alt="CM901">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="about">
+                        <div class="name" id="name_008">
+                            Supernova
+                        </div>
+                        <div class="desc">
+                            The Benelli Supernova is a pump action shotgun used for hunting, self-defense and law
+                            enforcement, made by Italian firearm manufacturer Benelli Armi SpA. The Benelli SuperNova is
+                            an effective, comfortable-to-shoot option for those looking for a shotgun for both home
+                            defense and hunting. And the price isn't too bad either!
+                        </div>
+                    </div>
+                    <div class="prchs mt-2">
+                        <select name="" id="quantity_008" class="d-block">
+                            <option value="choose">
+                                Quantity
+                            </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="price text-danger fs-2">
+                        <sup>&#8377;</sup><span class="fs-1" id="amt_008">14,500</span>
+                        <div id="add_008" class="px-0 py-0 mx-3 purchase btn" onclick="addtocart(this)">
+                            <i class="fa-sharp fa-solid fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="prodrow9">
+                <div class="col-12 mt-3 col-md-4 mt-5 mb-5" id="prodcol9">
+                    <div id="imgdiv_009">
+                        <img src="Images/img_009.jpg" alt="CM901">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="about">
+                        <div class="name" id="name_009">
+                            Blaser
+                        </div>
+                        <div class="desc">
+                            The Blaser F3 is a break-action over-and-under shotgun manufactured by Blaser Jagdwaffen
+                            GmbH of Isny, Germany. It was introduced in 2004. Barrel length options are 27, 28 and 29
+                            inches and the 12 and 28 inches only for the 20-gauge gun. Weight: 8lb 6oz
+                        </div>
+                    </div>
+                    <div class="prchs mt-2">
+                        <select name="" id="quantity_009" class="d-block">
+                            <option value="choose">
+                                Quantity
+                            </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="price text-danger fs-2">
+                        <sup>&#8377;</sup><span class="fs-1" id="amt_009">15,000</span>
+                        <div id="add_009" class="px-0 py-0 mx-3 purchase btn" onclick="addtocart(this)">
+                            <i class="fa-sharp fa-solid fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="prodrow10">
+                <div class="col-12 mt-3 col-md-4 mt-3 p-4" id="prodcol10">
+                    <div id="imgdiv_010">
+                        <img src="Images/img_010.jpg" alt="CM901">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="about">
+                        <div class="name" id="name_010">
+                            Peacemaker
+                        </div>
+                        <div class="desc">
+                            The Colt Single Action Army is a single-action revolver handgun. The revolver was dubbed the
+                            "Peacemaker", and is a famous piece of Americana and the American Wild West era.
+                            Cartridge: .45 Colt, .44-40 WCF, .38-40 WCF, .32-20 WCF, .38 Colt, .22 LR, .38 Special, .45
+                            ACP, .357 Magnum, .44 Special and numerous other calibers.
+                        </div>
+                    </div>
+                    <div class="prchs mt-2">
+                        <select name="" id="quantity_010" class="d-block">
+                            <option value="choose">
+                                Quantity
+                            </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="price text-danger fs-2">
+                        <sup>&#8377;</sup><span class="fs-1" id="amt_010">14,000</span>
+                        <div id="add_010" class="px-0 py-0 mx-3 purchase btn" onclick="addtocart(this)">
+                            <i class="fa-sharp fa-solid fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="prodrow11">
+                <div class="col-12 mt-3 col-md-4 mt-3 pt-3 mb-5" id="prodcol11">
+                    <div id="imgdiv_011">
+                        <img src="Images/img_011.jpg" alt="CM901">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="about">
+                        <div class="name" id="name_011">
+                            Bobcat
+                        </div>
+                        <div class="desc">
+                            The Beretta 21A Bobcat is a semi-automatic pocket pistol designed by Beretta in Italy.
+                            Available in .22 LR or .25 ACP. It is perfect for concealed carry (on its own or as a backup
+                            pistol), and it keeps besting all pistols in its class for quality, value and design.
+                        </div>
+                    </div>
+                    <div class="prchs mt-2">
+                        <select name="" id="quantity_011" class="d-block">
+                            <option value="choose">
+                                Quantity
+                            </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="price text-danger fs-2">
+                        <sup>&#8377;</sup><span class="fs-1" id="amt_011">12,000</span>
+                        <div id="add_011" class="px-0 py-0 mx-3 purchase btn" onclick="addtocart(this)">
+                            <i class="fa-sharp fa-solid fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="prodrow12">
+                <div class="col-12 mt-3 col-md-4 mt-3" id="prodcol12">
+                    <div id="imgdiv_012">
+                        <img src="Images/img_012.jpg" alt="CM901">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="about">
+                        <div class="name" id="name_012">
+                            M249
+                        </div>
+                        <div class="desc">
+                            The M249 Squad Automatic Weapon, or SAW, is an individually portable, gas operated, magazine
+                            or disintegrating metallic link-belt fed, light machine gun with fixed headspace and quick
+                            change barrel feature. The M249 engages point targets out to 800 meters, firing the improved
+                            NATO standard 5.56mm cartridge.
+                        </div>
+                    </div>
+                    <div class="prchs mt-2">
+                        <select name="" id="quantity_012" class="d-block">
+                            <option value="choose">
+                                Quantity
+                            </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="price text-danger fs-2">
+                        <sup>&#8377;</sup><span class="fs-1" id="amt_012">30,000</span>
+                        <div id="add_012" class="px-0 py-0 mx-3 purchase btn" onclick="addtocart(this)">
+                            <i class="fa-sharp fa-solid fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="prodrow13">
+                <div class="col-12 mt-3 col-md-4 mt-3" id="prodcol13">
+                    <div id="imgdiv_013">
+                        <img src="Images/img_013.jpg" alt="CM901">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="about">
+                        <div class="name" id="name_013">
+                            MK14
+                        </div>
+                        <div class="desc">
+                            The MK14 Enhanced Battle Rifle (EBR) is an American military selective fire battle rifle,
+                            and a designated marksman rifle chambered for the 7.62×51mm NATO cartridge.
+                        </div>
+                    </div>
+                    <div class="prchs mt-2">
+                        <select name="" id="quantity_013" class="d-block">
+                            <option value="choose">
+                                Quantity
+                            </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="price text-danger fs-2">
+                        <sup>&#8377;</sup><span class="fs-1" id="amt_013">33,000</span>
+                        <div id="add_013" class="px-0 py-0 mx-3 purchase btn" onclick="addtocart(this)">
+                            <i class="fa-sharp fa-solid fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="prodrow14">
+                <div class="col-12 mt-3 col-md-4 mt-3" id="prodcol14">
+                    <div id="imgdiv_014">
+                        <img src="Images/img_014.jpg" alt="CM901">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="about">
+                        <div class="name" id="name_014">
+                            Dragunov
+                        </div>
+                        <div class="desc">
+                            The Dragunov sniper rifle is a lightweight, portable weapon designed for infantry use. It
+                            uses a cartridge similar to the 7.62×51mm NATO and is known for its accuracy, reliability,
+                            and easy maintenance. It can shoot at distances up to 800 meters and is equipped with a
+                            unique scope that allows for both-eye aiming.
+                        </div>
+                    </div>
+                    <div class="prchs mt-2">
+                        <select name="" id="quantity_014" class="d-block">
+                            <option value="choose">
+                                Quantity
+                            </option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="price text-danger fs-2">
+                        <sup>&#8377;</sup><span class="fs-1" id="amt_014">37,000</span>
+                        <div id="add_014" class="px-0 py-0 mx-3 purchase btn" onclick="addtocart(this)">
+                            <i class="fa-sharp fa-solid fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="prodrow15">
+                <div class="col-12 mt-3 col-md-4 mt-3" id="prodcol15">
+                    <div id="imgdiv_015">
+                        <img src="Images/img_015.jpg" alt="CM901">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="about">
+                        <div class="name" id="name_015">
+                            RPG
+                        </div>
+                        <div class="desc">
+                            A rocket-propelled grenade (RPG) is a shoulder-fired missile weapon that launches rockets
+                            equipped with an explosive warhead. Most RPGs can be carried by an individual soldier, and
+                            are frequently used as anti-tank weapons.
+                        </div>
+                    </div>
+                    <div class="prchs mt-2">
+                        <select name="" id="quantity_015" class="d-block">
+                            <option value="choose">
+                                Quantity
+                            </option>
+                            <option value="1">1</option>
+                        </select>
+                    </div>
+                    <div class="price text-danger fs-2">
+                        <sup>&#8377;</sup><span class="fs-1" id="amt_015">50,000</span>
+                        <div id="add_015" class="px-0 py-0 mx-3 purchase btn" onclick="addtocart(this)">
+                            <i class="fa-sharp fa-solid fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-10">
+                        <div class="fs-1">
+                            Your Cart
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-end fs-3">
+                            <span id="close" onclick="hide_modal()">
+                                <i id="clsxmark" class="fa-solid fa-xmark pb-3 text-danger"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <table id="mytable">
+                        <thead>
+                            <tr>
+                                <div class="col-3 text-end">
+                                    <th>Product</th>
+                                </div>
+                                <div class="col-3 text-end">
+                                    <th>Name</th>
+                                </div>
+                                <div class="col-1 text-end">
+                                    <th>Quantity</th>
+                                </div>
+                                <div class="col-4 text-end">
+                                    <th>Price</th>
+                                </div>
+                                <div class="col-1">
+                                    <th class="text-danger">Remove</th>
+                                </div>
+                            </tr>
+                        </thead>
+                        <tbody id="table_body">
+
+                        </tbody>
+                        <tfoot>
+                            <td>Total</td>
+                            <td>Amount</td>
+                            <td>=</td>
+                            <td><sup>&#8377;</sup><span id="total"></span></td>
+                            <td></div>
+                            </td>
+                        </tfoot>
+                    </table>
+                    <div class="mt-3 btn btn-light" onclick="purchase()">Purchase</div>
+                    
+                    <div id="addrupee" class="d-none"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="end">
+        <div id="evilface">
+            <img src="Images/img_evilface.gif" alt="Evil Face">
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- Script Link -->
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
